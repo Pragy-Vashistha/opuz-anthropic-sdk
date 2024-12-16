@@ -309,7 +309,12 @@ export {
 
 export import toFile = Uploads.toFile;
 export import fileFromPath = Uploads.fileFromPath;
+
+// Export Opuz functionality
 import Opuz from './opuz';
+import CheckBuilder from './checkBuilder';
+export { Opuz, CheckBuilder };
+export * from './types';
 
 Anthropic.Completions = Completions;
 Anthropic.Messages = Messages;

@@ -22,8 +22,8 @@ export type CheckType =
 export interface Check {
     type: CheckType;
     value: string | number | RegExp | object | boolean | number[];
-    threshold?: number;
-    options?: Record<string, any>;
+    options?: Record<string, any> | undefined;
+    threshold?: number | undefined;
 }
 
 export interface ClientConfig {
